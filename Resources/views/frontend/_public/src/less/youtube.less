@@ -1,0 +1,35 @@
+
+.yt--lazyload-plugin {
+    position: relative;
+
+    .yt-img {
+        cursor: pointer;
+    }
+
+    .yt-icon {
+        color: #fff;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: calc(5.5rem);
+        pointer-events: none;
+
+        &:nth-child(2) {
+            filter: blur(2px);
+            color: rgba(0, 0, 0, 0.5);
+            transform: translate(2px, 2px);
+        }
+
+        &:nth-child(3) {
+            color: #fff;
+        }
+    }
+}
