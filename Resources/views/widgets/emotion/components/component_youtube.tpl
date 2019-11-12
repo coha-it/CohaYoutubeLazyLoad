@@ -23,7 +23,7 @@
             {/if}
 
             {* If No Autplay *}
-            {if ($params && strpos($params, 'autoplay=1') === false)}
+            {if !$Data.video_autoplay}
                 <div class="yt--lazyload-plugin">
                     <img 
                         class="yt-img" 
@@ -41,6 +41,7 @@
                         height="100%"
                         src="https://www.youtube-nocookie.com/embed/{$Data.video_id}{if $params}{$params}{/if}"
                         frameborder="0"
+                        allow="autoplay; encrypted-media" 
                         allowfullscreen>
                 </iframe>
             {/if}

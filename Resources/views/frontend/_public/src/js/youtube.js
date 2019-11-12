@@ -5,9 +5,8 @@ function ytLazyLoad(yt) {
       sUrl      += '&autoplay=1';
 
   eWrapper.after(
-    '<iframe class="external--content content--youtube" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' + sUrl + '" frameborder="0" allowfullscreen></iframe>'
+    '<iframe class="external--content content--youtube" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' + sUrl + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
   );
 
   eWrapper.remove();
-
 }
